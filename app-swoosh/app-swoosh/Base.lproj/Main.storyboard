@@ -122,6 +122,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="Ghp-AG-0eD" eventType="touchUpInside" id="GNV-EG-wFf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWt-lH-aFZ" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="267.33333333333331" width="335" height="40"/>
@@ -130,6 +133,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="Ghp-AG-0eD" eventType="touchUpInside" id="mq8-zA-dNJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBf-d1-x52" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="367.33333333333331" width="335" height="40"/>
@@ -138,6 +144,9 @@
                                         <state key="normal" title="Co-Ed">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="Ghp-AG-0eD" eventType="touchUpInside" id="qkV-AZ-6G7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -149,7 +158,7 @@
                                     <constraint firstAttribute="trailing" secondItem="awD-78-Wcp" secondAttribute="trailing" id="unB-gn-1rX"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqW-LR-lFO" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqW-LR-lFO" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="708" width="335" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.39784888699999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -195,6 +204,7 @@
                         <viewLayoutGuide key="safeArea" id="Z2R-jm-Zxt"/>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="JqW-LR-lFO" id="SAk-HA-tZE"/>
                         <segue destination="Vys-xO-dbL" kind="show" identifier="skillVCSegue" id="lON-W9-DLs"/>
                     </connections>
                 </viewController>
